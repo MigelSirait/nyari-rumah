@@ -1,0 +1,19 @@
+.about-page header {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/latar2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-Section{
+    background-color: #f8f9fa;
+}
+.text-justify {
+    text-align: justify;
+  }
+  
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+}
+
+

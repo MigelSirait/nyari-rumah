@@ -1,0 +1,49 @@
+.contact-page header {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/latar5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#contact-form {
+    width: 100%;
+}
+
+#contact-form .form-control:focus,
+#contact-form .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+}
+
+.contact-page i {
+    flex-shrink: 0;
+}
+
+.contact-page a.text-dark:active,
+.contact-page a.text-dark:focus {
+    color: #0d6efd; /* You can change this color to any color you prefer */
+}
+
+.contact-page .d-flex a.text-dark i {
+    color: #212529;
+    transition: color 0.3s;
+  }
+  
+  /* Change color on hover */
+  .contact-page .d-flex a.text-dark:hover i {
+    color: blue; /* You can customize the hover color as well */
+  }
+
+@media (max-width: 768px) {
+    .contact-page header h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-page .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .contact-page .d-flex i {
+        margin-bottom: 0.5rem;
+    }
+}

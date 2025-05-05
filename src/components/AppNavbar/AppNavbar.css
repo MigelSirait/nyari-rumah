@@ -1,0 +1,63 @@
+/* Navbar default (awal) */
+.header-navbar {
+  background-color: transparent;
+  transition: background-color 0.4s ease, padding 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+/* Navbar setelah scroll */
+.header-navbar.scrolled {
+  background-color: #01284F;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Nav link default */
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  position: relative;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+/* Underline efek */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #FF0000;
+  transition: width 0.3s ease;
+}
+
+/* Hover efek */
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active link: teks merah + underline */
+.navbar .nav-link.active {
+  color: #FF0000 !important;
+}
+
+.navbar .nav-link.active::after {
+  width: 100%;
+  background-color: #FF0000;
+}
+
+/* Jarak antar item nav */
+.navbar .navbar-nav {
+  gap: 15px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #212529;
+    padding: 10px 20px;
+    border-radius: 0.375rem;
+  }
+}

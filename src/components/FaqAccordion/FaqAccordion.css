@@ -1,0 +1,28 @@
+.faq-section {
+    background: linear-gradient(180deg, #f1f3f5 0%, #e2e6ea 100%);
+}
+.faq-section p,
+.accordion {
+    width: 75%;
+}
+
+.accordion .accordion-button:focus,
+.accordion .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    background-color: #0c6cfc;
+    color: #ffffff;
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+    filter: invert();
+}
+
+@media only screen and (max-width: 992px) {
+    .faq-section p,
+    .accordion {
+        width: 100%;
+    }
+}

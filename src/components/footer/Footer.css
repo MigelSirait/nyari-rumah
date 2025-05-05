@@ -1,0 +1,62 @@
+.footer-dark {
+  background-color: #01284F;
+  color: white;
+}
+
+.footer-header {
+  gap: 10px;
+}
+
+.footer-title {
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+  width: fit-content;
+  margin-bottom: 8px;
+  padding-bottom: 3px;
+  font-size: 1.1rem;
+}
+
+.footer-subtitle {
+  color: white;
+  font-size: 1.25rem; /* Ukuran teks subtitle */
+  font-weight: 500; /* Tebal huruf */
+}
+
+.footer-text {
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-link:hover {
+  color: red;
+}
+
+.social-icon i {
+  font-size: 2rem; /* Membesarkan social media icon */
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover i {
+  color: red;
+  transform: scale(1.2); /* Efek membesar saat hover */
+}
+
+.footer-divider {
+  border-top: 1px solid #ffffff55;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  /* Tidak perlu override text-md-end/justify-content-md-end kalau tidak dipakai */
+}

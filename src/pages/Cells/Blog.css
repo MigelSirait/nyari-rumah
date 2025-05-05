@@ -1,0 +1,64 @@
+.blog-page header {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/latar4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .blog-img {
+    transform: scale(1.05);
+}
+
+.card {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.page-link {
+    color: #0d6efd;
+}
+
+/* Blog.css */
+.custom-read-more {
+    display: inline-flex;
+    align-items: center;
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.custom-read-more:hover {
+    color: #0b5ed7;
+    transform: translateX(5px);
+}
+
+.custom-read-more i {
+    transition: transform 0.3s ease;
+}
+
+.custom-read-more:hover i {
+    transform: translateX(3px);
+}
+
+
+@media (max-width: 768px) {
+    .blog-page header h1 {
+        font-size: 2.5rem;
+    }
+}
